@@ -5,6 +5,7 @@
     "color": "create_interactive_craft:block/color_redstone_lamp/color",
     "common": "create_interactive_craft:block/color_redstone_lamp/common"
   },
+  "render_type": "minecraft:cutout",
   "elements": [
     {
       "from": [0, 0, 0],

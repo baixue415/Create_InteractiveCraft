@@ -3,6 +3,7 @@ package com.baixue415.create_interactive_craft;
 import com.baixue415.create_interactive_craft.Block.CreateInteractiveCraftModBlockEntities;
 import com.baixue415.create_interactive_craft.Block.CreateInteractiveCraftModBlocks;
 import com.baixue415.create_interactive_craft.Block.CreateInteractiveCraftModColorBlock;
+import com.baixue415.create_interactive_craft.Item.CreateInteractiveCraftModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -23,6 +24,7 @@ public class CreateInteractiveCraftMod
 
         CreateInteractiveCraftModBlocks.register(modEventBus); //注册方块
         CreateInteractiveCraftModBlockEntities.register(modEventBus); //注册方块实体
+        CreateInteractiveCraftModItems.register(modEventBus); //注册物品
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
