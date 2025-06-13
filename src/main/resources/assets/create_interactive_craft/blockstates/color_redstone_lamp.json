@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "create_interactive_craft:block/color_redstone_lamp/color_redstone_lamp"
+    }
+  }
+}
