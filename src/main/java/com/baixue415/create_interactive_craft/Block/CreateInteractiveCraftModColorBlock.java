@@ -19,7 +19,7 @@ public class CreateInteractiveCraftModColorBlock {
                 BlockEntity blockEntity = world.getBlockEntity(pos);
                 if (!(blockEntity instanceof ColorRedstoneLampBlockEntity colorRedstoneLampBlockEntity)) return -1;
                 return colorRedstoneLampBlockEntity.color;
-            }, ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create_interactive_craft", "color_redstone_lamp")));
+            }, ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create_interactive_craft:color_redstone_lamp")));
         });
     }
 }

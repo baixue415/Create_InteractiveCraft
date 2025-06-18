@@ -9,10 +9,6 @@ import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
-
 public class ColorRedstoneLampBlockEntity extends BlockEntity {
     public ColorRedstoneLampBlockEntity(BlockPos pos, BlockState state) { super(CreateInteractiveCraftModBlockEntities.color_redstone_lamp_entity.get(), pos, state); }
 

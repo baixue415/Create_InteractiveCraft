@@ -44,11 +44,4 @@ public class ColorRedstoneLampBlock extends Block implements EntityBlock {
         world.sendBlockUpdated(pos, blockstate, blockstate, 3);
         world.scheduleTick(pos, this, 1);
     }
-
-
-    //附近充能
-    @Override
-    public void neighborChanged(BlockState state, Level world, BlockPos pos, Block neighborBlock, BlockPos neighborPos, boolean isMoving) {
-        if (!(world instanceof ServerLevel)) return;// 确保只在服务端执行
-    }
 }

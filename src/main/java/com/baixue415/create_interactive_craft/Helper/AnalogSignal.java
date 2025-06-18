@@ -6,25 +6,21 @@ import net.minecraft.world.level.Level;
 import java.util.Objects;
 
 public class AnalogSignal {
-    public String WorldId;
-    public BlockPos blockPos;
-    public String Channel;
+    public String channel;
     public Integer power;
 
-    public AnalogSignal(Level world, BlockPos blockPos) {
-        this.WorldId = world.dimension().location().toString();
-        this.blockPos = blockPos;
-        this.Channel = "";
+    public AnalogSignal() {
+        this.channel = "";
         this.power = 0;
     }
 
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof AnalogSignal that)) return false;
-        return Objects.equals(WorldId, that.WorldId) && Objects.equals(blockPos, that.blockPos);
+        return Objects.equals(channel, that.channel);
     }
     @Override
     public int hashCode() {
-        return Objects.hash(WorldId, blockPos);
+        return Objects.hashCode(channel);
     }
 }
